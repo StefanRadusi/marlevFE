@@ -1,0 +1,1 @@
+export { MarlevLogo } from "./MarlevLogo";
