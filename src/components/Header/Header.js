@@ -12,6 +12,7 @@ export const Header = withRouter(({ location }) => {
   const currentPage = getCurrentPage(location);
 
   const [menuVisibility, setMenuVisibility] = useState(true);
+  const handleOnClick = () => setMenuVisibility(!menuVisibility);
 
   return (
     <header
@@ -24,9 +25,9 @@ export const Header = withRouter(({ location }) => {
 
       <div className="mobile-buttons-container">
         <div className="mobile-background" />
-        <BurgerButton onClick={() => setMenuVisibility(!menuVisibility)} />
+        <BurgerButton onClick={handleOnClick} />
         {menuVisibility && (
-          <div className="mobile-buttons">
+          <div className="mobile-buttons" onClick={handleOnClick}>
             <MenuButtons currentPage={currentPage} />
           </div>
         )}
