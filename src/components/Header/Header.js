@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { MarlevLogo } from "../MarlevLogo";
+import { MarlevLogo } from "../common/MarlevLogo";
 import { withRouter } from "react-router-dom";
 import { getCurrentPage, mergeCssClass } from "../../utils/utils";
 import { BurgerButton } from "./BurgerButton";

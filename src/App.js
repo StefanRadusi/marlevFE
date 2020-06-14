@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.scss";
 import { Header } from "./components/Header";
-import { LandingPage } from "./components/LandingPage";
-import { Calculator } from "./components/Calculator";
+import { LandingPage } from "./components/pages/LandingPage";
+import { Calculator } from "./components/pages/Calculator";
 
 function App() {
   return (
