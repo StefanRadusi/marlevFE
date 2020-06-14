@@ -11,7 +11,7 @@ import "./Header.scss";
 export const Header = withRouter(({ location }) => {
   const currentPage = getCurrentPage(location);
 
-  const [menuVisibility, setMenuVisibility] = useState(true);
+  const [menuVisibility, setMenuVisibility] = useState(false);
   const handleOnClick = () => setMenuVisibility(!menuVisibility);
 
   return (
