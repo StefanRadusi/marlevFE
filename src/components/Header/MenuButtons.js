@@ -4,10 +4,10 @@ import { HeaderButton } from "./HeaderButton";
 export function MenuButtons({ currentPage }) {
   return (
     <Fragment>
-      <HeaderButton to="/" text="ACASA" currentPage={currentPage} />
-      <HeaderButton to="/produse" text="PRODUSE" currentPage={currentPage} />
+      <HeaderButton to="/#home" text="ACASA" currentPage={currentPage} />
+      <HeaderButton to="/#produse" text="PRODUSE" currentPage={currentPage} />
       <HeaderButton
-        to="/portofoliu"
+        to="/#portofoliu"
         text="PORTOFOLIU"
         currentPage={currentPage}
       />
@@ -16,7 +16,7 @@ export function MenuButtons({ currentPage }) {
         text="CALCULATOR"
         currentPage={currentPage}
       />
-      <HeaderButton to="/contact" text="CONTACT" currentPage={currentPage} />
+      <HeaderButton to="/#contact" text="CONTACT" currentPage={currentPage} />
     </Fragment>
   );
 }

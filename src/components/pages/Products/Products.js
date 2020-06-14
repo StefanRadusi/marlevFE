@@ -4,7 +4,7 @@ import "./Products.scss";
 
 export function Products() {
   return (
-    <div className="products-page">
+    <div id="produse" className="products-page">
       <h1>Produse</h1>
     </div>
   );

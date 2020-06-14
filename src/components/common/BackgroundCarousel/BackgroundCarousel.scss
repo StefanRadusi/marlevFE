@@ -1,0 +1,39 @@
+.background-carousel-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+
+  .background-carousel {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+
+    .background-carousel-img {
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .background-carousel-img-visible {
+      opacity: 1;
+    }
+  }
+
+  .background-carousel-component {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
