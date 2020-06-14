@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavHashLink as Link } from "react-router-hash-link";
 
 import { MarlevLogo } from "../common/MarlevLogo";
 import { withRouter } from "react-router-dom";
@@ -18,7 +19,9 @@ export const Header = withRouter(({ location }) => {
     <header
       className={mergeCssClass("header", menuVisibility && "header-expand")}
     >
-      <MarlevLogo />
+      <Link to="/#home" smooth className="logo-link">
+        <MarlevLogo />
+      </Link>
       <div className="header-buttons-container">
         <MenuButtons currentPage={currentPage} />
       </div>
