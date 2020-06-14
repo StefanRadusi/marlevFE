@@ -1,0 +1,38 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  max-width: 600px;
+  color: white;
+
+  .contact-form__row {
+    margin: 10px;
+  }
+
+  .contact-form__input_row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .MuiInputLabel-animated {
+    color: white;
+  }
+
+  .MuiInputBase-input {
+    color: white;
+  }
+
+  .MuiInput-underline:before {
+    border-color: white;
+  }
+
+  .MuiButton-outlined {
+    border-color: white;
+    color: white;
+  }
+
+  .MuiButton-outlined.Mui-disabled{
+    border-color: darkgray;
+    color: darkgray;
+  }
+}
