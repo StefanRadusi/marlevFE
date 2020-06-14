@@ -1,1 +1,1 @@
-export { utils } from "./utils";
+export { mergeCssClass, getCurrentPage } from "./utils";
