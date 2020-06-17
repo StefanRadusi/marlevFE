@@ -7,6 +7,7 @@ import { LandingPage } from "./components/pages/LandingPage";
 import { Calculator } from "./components/pages/Calculator";
 import {MessageContext} from "./components/common/Message/messageContext";
 import {Message} from "./components/common/Message";
+import {SinglePage} from "./components/pages/SinglePage/SinglePage";
 
 
 function App() {
@@ -24,11 +25,12 @@ function App() {
           <Route exact path="/calculator">
             <Calculator />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <MessageContext.Provider value={(message) => handleMessageChange(message)}>
             <LandingPage />
             </MessageContext.Provider>
           </Route>
+          <Route exact path="/:path" component={SinglePage} />
         </Switch>
       </Router>
       <Message message={message}/>

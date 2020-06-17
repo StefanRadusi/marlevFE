@@ -1,5 +1,95 @@
-.products-page {
+.products-wrapper{
+  position: relative;
+  overflow: hidden;
+  padding: 15vh 15px;
+  margin: 0 auto;
+}
+
+.products-inner-wrapper{
   width: 100%;
-  height: 100%;
-  padding-top: 80px;
+  position: relative;
+  min-height: 10px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  h2{
+    display: block;
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-weight: bold;
+    overflow-wrap: break-word;
+    line-height: 1.1;
+  }
+
+  .products-content{
+    font-size: 13px;
+    display: inline-block;
+    width: 100%;
+    margin-top: 15vh;
+    margin-bottom: 22px;
+
+    .products-content-tabs{
+      position: relative;
+      text-align: left;
+
+      .PrivateTabIndicator-colorPrimary-3{
+        background-color: transparent;
+        border-bottom: 1px solid #000;
+        color: #000;
+      }
+
+      .MuiTabs-flexContainer{
+        border-bottom: 1px solid #ddd;
+
+        .PrivateTabIndicator-colorPrimary-2{
+          border-bottom: 1px solid #000;
+          color: #000;
+        }
+
+        .MuiButtonBase-root{
+          font-size: 14px;
+          font-weight: bold;
+          letter-spacing: .5px;
+        }
+
+        .MuiTab-textColorPrimary {
+          color: #bbb;
+        }
+
+        .MuiTab-textColorPrimary.Mui-selected{
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  .products-wrapper{
+    width: 750px;
+
+    .products-inner-wrapper{
+      .products-content{
+        .products-content-tabs{
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px){
+  .products-wrapper{
+    width: 970px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .products-wrapper{
+    width: 1170px;
+  }
 }
