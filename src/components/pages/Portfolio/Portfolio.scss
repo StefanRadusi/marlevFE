@@ -1,5 +1,59 @@
 .portfolio-page {
   width: 100%;
   height: 100%;
-  padding-top: 80px;
+  padding: 80px 100px 40px 100px;
+
+  display: flex;
+  flex-direction: column;
+
+  .portfolio-page-title {
+    position: relative;
+    font-size: 42px;
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      background: black;
+    }
+  }
+
+  .portfolio-page-img {
+    flex: 1;
+    overflow: auto;
+    padding: 10px;
+    display: flex;
+  }
+
+  .portfolio-page-img-container {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .MuiGridListTile-tile {
+    transform: scale(1);
+    box-shadow: 0 5px 15px transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+      z-index: 1;
+      box-shadow: 0 5px 15px #000;
+    }
+  }
+
+  .portfolio-img {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .portfolio-page {
+    padding: 80px 10px 40px 10px;
+
+    .portfolio-page-title {
+      font-size: 40px;
+    }
+  }
 }
