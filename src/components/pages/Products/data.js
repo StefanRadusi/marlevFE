@@ -1,7 +1,6 @@
 import atena from "./images/atena.jpg";
 import barcelona from "./images/barcelona.jpg";
 import customized from "./images/customized.jpg";
-import portofoliu from "./images/portofoliu.jpg";
 import varsovia from "./images/varsovia.jpg";
 import wilson from "./images/wilson.jpg";
 
