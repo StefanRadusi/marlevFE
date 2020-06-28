@@ -1,7 +1,9 @@
 import React from "react";
 import { TabPanel } from "./TabPanel";
-import { panouriGard } from "../data";
+import {balustrade, confectiiSpeciale, panouriGard, portiAcces} from "../data";
 import { TabPanelArticle } from "../TabPanelArticle/TabPanelArticle";
+import './TabPanelContent.scss'
+import {ImagePreviewList} from "../ImagePreviewList";
 
 export function TabPanelContent(props) {
   const { value } = props;
@@ -10,20 +12,21 @@ export function TabPanelContent(props) {
     <>
       <TabPanel value={value} index={0}>
         {panouriGard.map((panou, index) => {
-          return <TabPanelArticle key={index} panou={panou} />;
+          return <TabPanelArticle key={index} element={panou} />;
         })}
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        {portiAcces.map((poarta, index) => {
+          return <TabPanelArticle key={index} element={poarta}/>
+        })}
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <ImagePreviewList elementList={balustrade}/>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item four
+        <ImagePreviewList elementList={confectiiSpeciale}/>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Item 5
       </TabPanel>
       <TabPanel value={value} index={5}>
         Item 6

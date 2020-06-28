@@ -1,0 +1,15 @@
+.tabpanel-uimaterial {
+  display: flex;
+  flex-wrap: wrap;
+
+  .panel-box-data {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  img{
+    box-shadow: 0 5px 25px -10px #000
+  }
+}
