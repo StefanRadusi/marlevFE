@@ -4,6 +4,7 @@ import { portfolioData } from "./portfolioData";
 
 import "./Portfolio.scss";
 import { ImgPreview } from "./ImgPreview";
+import { PageTitle } from "../../common/PageTitle/PageTitle";
 
 export function Portfolio() {
   const [previewOpen, setPreviewOpen] = useState(false);
@@ -11,7 +12,7 @@ export function Portfolio() {
 
   return (
     <div id="portofoliu" className="portfolio-page">
-      <h1 className="portfolio-page-title">Portofoliu</h1>
+      <PageTitle title="Portofoliu" />
       <div className="portfolio-page-img">
         <div className="portfolio-page-img-container">
           <GridList cellHeight={160} cols={3}>

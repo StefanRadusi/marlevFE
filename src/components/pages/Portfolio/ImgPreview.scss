@@ -6,10 +6,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  outline: none;
 
   .img-preview-img {
     flex: 1;
     margin: 15px 37px;
+    overflow: hidden;
   }
 
   img {
