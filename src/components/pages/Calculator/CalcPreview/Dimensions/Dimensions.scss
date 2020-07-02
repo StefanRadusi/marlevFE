@@ -1,0 +1,77 @@
+.dimensions {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  p {
+    margin: 0;
+  }
+
+  .dimension-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+  }
+
+  .dimension-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: grey;
+  }
+
+  .dimension-x {
+    position: absolute;
+    left: 40px;
+    bottom: 8px;
+    width: calc(100% - 55px);
+    height: 20px;
+
+    .dimension-line {
+      position: absolute;
+      top: 11px;
+      left: 0;
+      width: calc(100% - 6px);
+      height: 2px;
+      background: grey;
+    }
+
+    .dimension-label {
+      top: -3px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      padding: 5px;
+      border-radius: 10px;
+    }
+  }
+
+  .dimension-y {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 20px;
+    height: calc(100% - 40px);
+
+    .dimension-line {
+      position: absolute;
+      top: 8px;
+      left: 7px;
+      height: calc(100% - 13px);
+      width: 2px;
+      background: grey;
+    }
+
+    .dimension-label {
+      left: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: white;
+      padding: 5px;
+      border-radius: 10px;
+    }
+  }
+}

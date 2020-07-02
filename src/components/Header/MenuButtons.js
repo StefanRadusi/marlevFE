@@ -11,11 +11,6 @@ export function MenuButtons({ currentPage }) {
         text="PORTOFOLIU"
         currentPage={currentPage}
       />
-      <HeaderButton
-        to="/calculator"
-        text="CALCULATOR"
-        currentPage={currentPage}
-      />
       <HeaderButton to="/#contact" text="CONTACT" currentPage={currentPage} />
     </Fragment>
   );
