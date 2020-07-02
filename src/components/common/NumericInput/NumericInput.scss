@@ -1,0 +1,18 @@
+.numeric-input-container {
+  display: flex;
+  align-items: flex-end;
+  .numeric-input {
+    margin-left: 5px;
+  }
+  .numeric-increase-decrease {
+    margin-left: 5px;
+    display: flex;
+  }
+
+  .numeric-increase-decrease-button {
+    background: #ffb800;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+  }
+}

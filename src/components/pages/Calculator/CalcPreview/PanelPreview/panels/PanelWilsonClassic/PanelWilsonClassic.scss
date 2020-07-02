@@ -1,0 +1,64 @@
+.panel-wilson-classic {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .panel-wilson-classic-right,
+  .panel-wilson-classic-left {
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #563828;
+    z-index: 2;
+  }
+
+  .panel-wilson-classic-right {
+    left: unset;
+    right: 0;
+  }
+
+  .panel-wilson-classic-up {
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #563828;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .panel-wilson-classic-lamella {
+    width: 100%;
+    // height: 50px;
+    flex: 1;
+    position: relative;
+    // position: absolute;
+    // top: 40px;
+    // left: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(65, 40, 25, 1) 62%
+    );
+    // z-index: 0;
+
+    .panel-wilson-classic-lamella-front {
+      width: 100%;
+      height: 20px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: radial-gradient(
+        circle,
+        rgba(193, 133, 101, 1) 0%,
+        rgba(128, 86, 66, 1) 100%
+      );
+      z-index: 1;
+    }
+  }
+}
