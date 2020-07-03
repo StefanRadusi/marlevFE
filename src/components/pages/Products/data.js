@@ -218,3 +218,204 @@ export const confectiiSpeciale = [
       "http://marlevinvest.ro/wp-content/uploads/2017/09/20170904_170656.jpg",
   },
 ];
+
+export const automatizari = [
+  {
+    id: 1,
+    name: "Automatizari porti batante",
+    path: "automatizari-porti-batante",
+    image:
+      "http://marlevinvest.ro/wp-content/uploads/2018/02/20171102_165040.jpg",
+  },
+  {
+    id: 1,
+    name: "Automatizari porti culisante",
+    path: "automatizari-porti-culisante",
+    image:
+      "http://marlevinvest.ro/wp-content/uploads/2017/09/20170509_161150.jpg",
+  },
+  {
+    id: 1,
+    name: "Accesorii automatizari",
+    path: "accesorii-automatizari",
+    image: "http://marlevinvest.ro/wp-content/uploads/2017/09/dsa.jpg",
+  },
+];
+
+export const detailedGardList = [
+  {
+    id: 1,
+    path: "panou-de-gard-wilson",
+    title: "Panou de gard Wilson",
+    details: [
+      {
+        subtitle: "Wilson Clasic",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Panou-Gard-Wilson-Clasic.png",
+        description: [
+          "Montanti cu suport de lamela cu prindere individuala.",
+          "Lamela Wilson se asambleaza mecanic in 45’.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL.",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Wilson Ramen",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Panou-Gard-Wilson-Ramen.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Montantii cu suport de lamela sunt inserati in interiorul ramei.",
+          "Lamela Wilson se asambleaza mecanic in 45’.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL.",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+    ],
+    images: [
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170511_135716.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180208_164202.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/a20170508_142716.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180208_164232-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/a20170324_164644.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171217_185425-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171016_173448-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20170926_185913.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180102_144428.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180102_1444490.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171217_185949.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180208_164026-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171202_115130.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171217_185011.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171217_185425.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171217_185802.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171217_185900.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171217_192104.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171010_144951-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171010_143754-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180208_164232.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180212_162702.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180110_144540.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180110_145648.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171223_153017.jpg",
+      },
+      { img: "http://marlevinvest.ro/wp-content/uploads/2018/02/4423312.jpg" },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170827_152847.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170510_111222.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170510_111204.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/a20170413_172846.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/a20170407_173336.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/a20170324_164623.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170511_135810.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170509_160342.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170509_210927.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170509_161150.jpg",
+      },
+    ],
+  },
+];

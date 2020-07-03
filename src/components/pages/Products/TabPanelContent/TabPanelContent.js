@@ -1,6 +1,12 @@
 import React from "react";
 import { TabPanel } from "./TabPanel";
-import {balustrade, confectiiSpeciale, panouriGard, portiAcces} from "../data";
+import {
+  automatizari,
+  balustrade,
+  confectiiSpeciale,
+  panouriGard,
+  portiAcces
+} from "../data";
 import { TabPanelArticle } from "../TabPanelArticle/TabPanelArticle";
 import './TabPanelContent.scss'
 import {ImagePreviewList} from "../ImagePreviewList";
@@ -29,7 +35,9 @@ export function TabPanelContent(props) {
       <TabPanel value={value} index={4}>
       </TabPanel>
       <TabPanel value={value} index={5}>
-        Item 6
+        {automatizari.map((automatizare, index) => {
+          return <TabPanelArticle key={index} element={automatizare} customClassName="three-element-row"/>
+        })}
       </TabPanel>
     </>
   );
