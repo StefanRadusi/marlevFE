@@ -25,7 +25,7 @@ export function Calculator({
       <PageTitle title={getTitleName(name)} />
       <div className="calculator">
         <CalcPreview panel={panel} setPanel={setPanel} panelName={name} />
-        <OfferSummery />
+        <OfferSummery {...panel} />
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ export function PanelPreview({
   width,
   height,
   nrOfPanels,
-  heightOfPanels,
+  heightOfLamella,
   panelName,
 }) {
   const previewRef = useRef(null);
@@ -39,7 +39,7 @@ export function PanelPreview({
       }}
       ref={previewRef}
     >
-      {Panel && <Panel height={height} />}
+      {Panel && <Panel height={height} heightOfLamella={heightOfLamella} />}
     </div>
   );
 }

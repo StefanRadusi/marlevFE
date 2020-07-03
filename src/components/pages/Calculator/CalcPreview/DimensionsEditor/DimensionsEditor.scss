@@ -65,4 +65,35 @@
     pointer-events: initial;
     width: 300px;
   }
+
+  .lamella-options {
+    margin-top: 30px;
+    .lamella-options-title {
+      font-size: 16px;
+      margin-bottom: 10px;
+      span {
+        padding: 2px 10px;
+        background: black;
+        color: white;
+        border-radius: 10px;
+      }
+      &::before {
+        top: 12px;
+      }
+    }
+
+    .lamella-options-radio-group {
+      padding-left: 10px;
+
+      .MuiRadio-colorSecondary.Mui-checked {
+        color: #ffb800;
+
+        .MuiSvgIcon-root.PrivateRadioButtonIcon-layer-6 {
+          path {
+            fill: black;
+          }
+        }
+      }
+    }
+  }
 }
