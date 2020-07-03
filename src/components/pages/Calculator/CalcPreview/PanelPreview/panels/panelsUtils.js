@@ -36,10 +36,12 @@ export function calcScale(panel, container, originalScale) {
   return Math.round(originalScale * 100) / 100;
 }
 
-export function calcNumberOfLamellas(height) {
+export function calcNumberOfLamellas(height, heightOfPanels) {
   if (isNaN(Number(height))) {
     return 1;
   }
 
-  return Math.floor(height * 10);
+  const noOfLamella = Math.floor(height / heightOfPanels);
+
+  return noOfLamella;
 }

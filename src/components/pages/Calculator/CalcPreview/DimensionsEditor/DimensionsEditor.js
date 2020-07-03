@@ -5,6 +5,8 @@ import HeightIcon from "@material-ui/icons/Height";
 import "./DimensionsEditor.scss";
 import { mergeCssClass } from "../../../../../utils";
 import { NumericInput } from "../../../../common/NumericInput";
+import { RadioGroup, FormControlLabel, Radio } from "@material-ui/core";
+import { PageTitle } from "../../../../common/PageTitle/PageTitle";
 
 export function DimensionsEditor({
   width,
@@ -13,6 +15,7 @@ export function DimensionsEditor({
   heightOfLamella,
   setPanelWidth,
   setPanelHeight,
+  setHightOfLamella,
 }) {
   const [open, setEditorVisibility] = useState(false);
 
@@ -45,6 +48,34 @@ export function DimensionsEditor({
           value={width}
           onChange={(value) => setPanelWidth(value)}
         />
+        <div className="lamella-options">
+          <PageTitle title="optiuni lamele" className="lamella-options-title" />
+          <RadioGroup
+            aria-label="gender"
+            name="gender1"
+            value={heightOfLamella}
+            onChange={({ target: { value } }) =>
+              setHightOfLamella(Number(value))
+            }
+            className="lamella-options-radio-group"
+          >
+            <FormControlLabel
+              value={0.1}
+              label={"0.1 metri"}
+              control={<Radio />}
+            />
+            <FormControlLabel
+              value={0.2}
+              label={"0.2 metri"}
+              control={<Radio />}
+            />
+            <FormControlLabel
+              value={0.3}
+              label={"0.3 metri"}
+              control={<Radio />}
+            />
+          </RadioGroup>
+        </div>
       </div>
     </div>
   );
