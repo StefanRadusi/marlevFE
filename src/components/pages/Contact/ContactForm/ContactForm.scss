@@ -7,6 +7,25 @@
 
   .contact-form__row {
     margin: 10px;
+
+    &.contact-form__text-area {
+      margin: 0px;
+      margin-bottom: 10px;
+      width: 100%;
+      border: 1px solid white;
+      border-radius: 5px;
+
+      padding: 0px 10px 10px 10px;
+
+      .MuiInputLabel-formControl {
+        transform: translate(10px, 10px) scale(1);
+      }
+
+      .MuiInputLabel-shrink {
+        color: lightgray;
+        transform: translate(5px, 5px) scale(0.75);
+      }
+    }
   }
 
   .contact-form__input_row {
@@ -31,7 +50,7 @@
     color: white;
   }
 
-  .MuiButton-outlined.Mui-disabled{
+  .MuiButton-outlined.Mui-disabled {
     border-color: darkgray;
     color: darkgray;
   }

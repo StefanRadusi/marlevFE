@@ -4,6 +4,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import "./Products.scss";
 import { TabPanelContent } from "./TabPanelContent/TabPanelContent";
+import { PageTitle } from "../../common/PageTitle";
 
 function a11yProps(index) {
   return {
@@ -22,7 +23,7 @@ export function Products() {
   return (
     <div id="produse" className="products-wrapper">
       <div className="products-inner-wrapper">
-        <h2>Produse</h2>
+        <PageTitle title="Produse" />
         <div className="products-content">
           <div className="products-content-tabs">
             <Tabs
