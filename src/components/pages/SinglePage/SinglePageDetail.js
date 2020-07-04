@@ -18,6 +18,18 @@ export function SinglePageDetail(props) {
                 return <p>{phrase}</p>;
               })}
             </div>
+            <div className="detail-row_content-calculator">
+              <Link
+                  to="/calculator-oferta/panou-gard-wilson-clasic"
+                  className="detail-row_content-calculator"
+              >
+                <div className="detail-row_content-calculator__container">
+                  <AddIcon />
+                  <RemoveIcon />
+                </div>
+                <p>Calculator pret</p>
+              </Link>
+            </div>
           </div>
           <img src={detail.image}></img>
         </>

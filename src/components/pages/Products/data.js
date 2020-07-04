@@ -418,4 +418,365 @@ export const detailedGardList = [
       },
     ],
   },
+  {
+    id: 2,
+    path: "panou-de-gard-barcelona",
+    title: "Panou de gard Barcelona",
+    details: [
+      {
+        subtitle: "Barcelona Ramen",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Panou-Gard-Barcelona-Ramen-II.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamela decorativa 109×20 mm cu rigidizare interioara.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL.",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Barcelona Ramen II",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Panou-Gard-Barcelona-Ramen-II.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamela decorativa 109×20 mm cu rigidizare interioara.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL.",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+    ],
+    images: [
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170511_150215.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171223_100220.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171223_100209-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171223_233357-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/IMG-20171022-WA0000.jpg",
+      },
+    ],
+  },
+  {
+    id: 3,
+    path: "panou-de-gard-varsovia",
+    title: "Panou de gard Varsovia",
+    details: [
+      {
+        subtitle: "Varsovia Clasic",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Panou-Gard-Varsovia-Clasic.png",
+        description: [
+          "Montanti cu suport de lamela cu prindere individuala.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamele pot avea dimensiuni cuprinse intre 20 mm si 160 mm.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL.",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Varsovia Clasic II",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Panou-Gard-Varsovia-Clasic-II.png",
+        description: [
+          "Montanti cu suport de lamela cu prindere individuala.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamele pot avea dimensiuni cuprinse intre 20 mm si 160 mm.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL.",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Varsovia Ramen",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Panou-Gard-Varsovia-Ramen.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamele pot avea dimensiuni cuprinse intre 20 mm si 160 mm.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL.",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Varsovia Ramen II",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Panou-Gard-Varsovia-Ramen-II.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamele pot avea dimensiuni cuprinse intre 20 mm si 160 mm.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL.",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+    ],
+    images: [
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20171107_1536530.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171107_162152.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171107_160453.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20171107_153639.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180118_161523.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20180118_161445.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170509_151446.jpg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    path: "panou-de-gard-atena",
+    title: "Panou de gard Atena",
+    details: [
+      {
+        subtitle: "Atena clasic",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Panou-Atena-Clasic.jpg",
+        description: [
+          "Montanti cu suport de lamela cu prindere individuala.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamela decorativa 110×20 mm cu striatii ce imita lemnul.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL.",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Atena clasic II",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Panou-Atena-Clasic-II-1.jpg",
+        description: [
+          "Montanti cu suport de lamela cu prindere individuala.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamela decorativa 110×20 mm cu striatii ce imita lemnul.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL.",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Atena Ramen",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Panou-Atena-Ramen.jpg",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamela decorativa 110×20 mm cu striatii ce imita lemnul.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL.",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Atena Ramen II",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Panou-Atena-Ramen-II.jpg",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamela decorativa 110×20 mm cu striatii ce imita lemnul.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL.",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+    ],
+    images: [
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171002_170754-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170701_172225.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170904_140611.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170904_140643.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170701_173500.jpg",
+      },
+    ],
+  },
+  {
+    id: 5,
+    path: "customized",
+    title: "Panou de gard Customized",
+    details: [],
+    images: [
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170904_140611.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170904_140643.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170904_170656.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170904_170626.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170904_170533.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170831_201438.jpg",
+      },
+    ],
+  },
+  {
+    id: 6,
+    path: "porti-acces-wilson",
+    title: "Porti access Wilson",
+    details: [],
+    images: [
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180208_164202-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170511_135716.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171217_185425-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171016_173448-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180208_164232-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180208_164026-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171217_185949.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171217_185900.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171217_185802.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171217_185425.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171217_185011.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171016_173448.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20170926_185913-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180212_162702.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180208_164202.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180102_1444490.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180102_144428.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180102_144400.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171223_232525.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171223_153017.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170827_152847.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/a20170508_142716.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170509_161150.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20170509_210927.jpg",
+      },
+    ],
+  },
 ];
