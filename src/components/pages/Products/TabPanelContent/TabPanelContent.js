@@ -18,7 +18,7 @@ export function TabPanelContent(props) {
     <>
       <TabPanel value={value} index={0}>
         {panouriGard.map((panou, index) => {
-          return <TabPanelArticle key={index} element={panou} />;
+          return <TabPanelArticle panouGard key={index} element={panou} />;
         })}
       </TabPanel>
       <TabPanel value={value} index={1}>

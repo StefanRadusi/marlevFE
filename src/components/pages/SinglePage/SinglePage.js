@@ -11,7 +11,8 @@ export class SinglePage extends React.Component {
   }
 
   render() {
-    const { path } = this.props.match.params;
+    let { path } = this.props.match.params;
+    path = path.replace("/panou", "");
     const gard = detailedGardList.find((obj) => {
       return obj.path === path;
     });
