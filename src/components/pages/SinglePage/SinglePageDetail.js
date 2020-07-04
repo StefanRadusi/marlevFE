@@ -2,6 +2,7 @@ import React from "react";
 
 import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
+import { Link } from "react-router-dom";
 
 export function SinglePageDetail(props) {
   const { detail, index } = props;
@@ -17,10 +18,6 @@ export function SinglePageDetail(props) {
                 return <p>{phrase}</p>;
               })}
             </div>
-            <div className="detail-row_content-calculator">
-              <AddIcon />
-              <RemoveIcon />
-            </div>
           </div>
           <img src={detail.image}></img>
         </>
@@ -35,11 +32,16 @@ export function SinglePageDetail(props) {
               })}
             </div>
             <div className="detail-row_content-calculator">
-              <div className="detail-row_content-calculator__container">
-                <AddIcon />
-                <RemoveIcon />
-              </div>
-              <p>Calculator pret</p>
+              <Link
+                to="/calculator-oferta/panou-gard-wilson-clasic"
+                className="detail-row_content-calculator"
+              >
+                <div className="detail-row_content-calculator__container">
+                  <AddIcon />
+                  <RemoveIcon />
+                </div>
+                <p>Calculator pret</p>
+              </Link>
             </div>
           </div>
         </>
