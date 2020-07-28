@@ -1,4 +1,4 @@
-export const automatizariPortiBalante = [
+export const data = [
   {
     id: 1,
     name: "Twist 200",
@@ -299,5 +299,58 @@ export const automatizariPortiBalante = [
       "Prevenire accidente prin oprirea automata la intalnirea unui obstacol",
       "Iesiri si intrari pentru conectare: lampa de avertizare, celula fotoelectrica, yala electromagnetica, „safety edge”",
     ]
+  },
+];
+
+export const images = [
+  {
+    name: "1",
+    img:
+        "http://marlevinvest.ro/wp-content/uploads/2018/03/20180208_164202ww-1024x768.jpg",
+  },
+  {
+    name: "2",
+    img:
+        "http://marlevinvest.ro/wp-content/uploads/2018/03/20171107_153639ww-1024x533.jpg",
+  },
+  {
+    name: "3",
+    img:
+        "http://marlevinvest.ro/wp-content/uploads/2018/02/20171217_185425-1-1024x576.jpg",
+  },
+  {
+    name: "4",
+    img:
+        "http://marlevinvest.ro/wp-content/uploads/2017/09/20180118_161445-1024x738.jpg",
+  },
+  {
+    name: "5",
+    img:
+        "http://marlevinvest.ro/wp-content/uploads/2018/02/20171107_153703-1024x667.jpg",
+  },
+  {
+    name: "6",
+    img:
+        "http://marlevinvest.ro/wp-content/uploads/2018/02/20171102_165040-1024x558.jpg",
+  },
+  {
+    name: "7",
+    img:
+        "http://marlevinvest.ro/wp-content/uploads/2018/02/20170926_185913-1.jpg",
+  },
+  {
+    name: "8",
+    img:
+        "http://marlevinvest.ro/wp-content/uploads/2018/02/20171223_232525.jpg",
+  },
+  {
+    name: "9",
+    img:
+        "http://marlevinvest.ro/wp-content/uploads/2018/02/20180102_1444490.jpg",
+  },
+  {
+    name: "10",
+    img:
+        "http://marlevinvest.ro/wp-content/uploads/2017/09/20170629_134134.jpg",
   },
 ];

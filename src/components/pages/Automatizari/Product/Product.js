@@ -5,11 +5,12 @@ import {Content} from './Content/Content';
 import "./Product.scss";
 
 export function Product(props) {
-  const {product} = props;
+  const {product, isLast} = props;
 
   return (
-      <div className="product">
-        <img className="image--full" src={product.image} alt="img"/>
+      <div className={"product" + (isLast ? " last" : "")}>
+        {product.image && <img className="image--full" src={product.image}
+                               alt="img"/>}
         <h3>{product.title}</h3>
         <div className="product--content">
           <ul>

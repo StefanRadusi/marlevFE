@@ -1,7 +1,8 @@
 import React from "react";
 
-import {automatizariPortiBalante} from "../data";
+import {data, images} from './data';
 import {Product} from "../Product/Product";
+import {Images} from '../../../common/Images/Images';
 import "../../SinglePage/SinglePage.scss";
 
 export function AutomatizariPortiBalante() {
@@ -11,7 +12,10 @@ export function AutomatizariPortiBalante() {
           <h1 className="gard-title">Automatizari porti batante</h1>
           <span className="gard-separator-line"/>
         </div>
-        {automatizariPortiBalante.map(product => <Product product={product}/>)}
+        {data.map((product, index) =>
+            <Product key={index} product={product}
+                     isLast={index === data.length - 1}/>)}
+        <Images images={images}/>
       </div>
   );
 }
