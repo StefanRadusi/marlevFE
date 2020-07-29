@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 import "./OfferSummery.scss";
 import { calcNumberOfLamellas } from "../CalcPreview/PanelPreview/panels/panelsUtils";
@@ -6,6 +7,22 @@ import { PageTitle } from "../../../common/PageTitle/PageTitle";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { Cart } from "../Cart/Cart";
 import { mergeCssClass } from "../../../../utils";
+
+export function sendOrder() {
+  axios
+    .post("Marlevapplication-env.eba-qwtttvih.us-east-2.elasticbeanstalk.com/comanda", {
+      email: "dummyEmail",
+      phone: 1234,
+      details: "some details",
+      comanda: "here is your order details boss",
+    }, {})
+    .then((res) => {
+      console.log("greatSuccess");
+    })
+    .catch((err) => {
+      console.log("unable to fulfill request bossu meu");
+    });
+}
 
 export function OfferSummery({ width, height, heightOfLamella }) {
   const [showCart, setShowCart] = useState(false);
@@ -128,7 +145,7 @@ export function OfferSummery({ width, height, heightOfLamella }) {
 
             <p
               className="cart-button-text cart-button-send"
-              // onClick={() => setShowCart(!showCart)}
+              onClick={() => sendOrder()}
             >
               Trimite
             </p>
