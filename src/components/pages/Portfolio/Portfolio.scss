@@ -5,35 +5,6 @@
 
   display: flex;
   flex-direction: column;
-
-  .portfolio-page-img {
-    flex: 1;
-    overflow: auto;
-    padding: 10px;
-    display: flex;
-    margin-top: 15px;
-  }
-
-  .portfolio-page-img-container {
-    flex: 1;
-    margin: 10px;
-  }
-
-  .MuiGridListTile-tile {
-    transform: scale(1);
-    box-shadow: 0 5px 15px transparent;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    &:hover {
-      transform: scale(1.02);
-      z-index: 1;
-      box-shadow: 0 5px 15px #000;
-    }
-  }
-
-  .portfolio-img {
-    cursor: pointer;
-  }
 }
 
 @media only screen and (max-width: 700px) {
