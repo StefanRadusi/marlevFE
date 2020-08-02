@@ -40,6 +40,8 @@ export default function ContactForm() {
           label="Nume"
           value={name}
           required
+
+          color={"secondary"}
           onChange={handleNameChange}
         />
         <TextField

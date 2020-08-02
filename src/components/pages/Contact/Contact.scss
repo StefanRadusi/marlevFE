@@ -17,4 +17,16 @@
       width: calc(100% - 190px);
     }
   }
+
+  .contact-page--content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    color: white;
+    margin: 16px 0;
+    display: block;
+    text-decoration: none;
+  }
 }
