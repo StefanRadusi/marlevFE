@@ -1,0 +1,26 @@
+.product--content--composition--component {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .component-container {
+    display: inline-flex;
+    width: 540px;
+    padding-right: 30px;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .accessory-product-img {
+      width: 90px;
+      height: 90px;
+      opacity: 1;
+    }
+  }
+
+
+  ul {
+    margin-top: 0;
+  }
+}
