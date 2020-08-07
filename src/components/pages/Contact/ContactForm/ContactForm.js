@@ -33,67 +33,67 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="contact-form">
-      <div className="contact-form__input_row contact-form__row">
-        <TextField
-          id="name"
-          label="Nume"
-          value={name}
-          required
+      <div className="contact-form">
+        <div className="contact-form__input_row contact-form__row">
+          <TextField
+              id="name"
+              label="Nume"
+              value={name}
+              required
 
-          color={"secondary"}
-          onChange={handleNameChange}
-        />
+              color={"secondary"}
+              onChange={handleNameChange}
+          />
+          <TextField
+              id="email"
+              label="Email"
+              type="email"
+              value={email}
+              required
+              color={"secondary"}
+              onChange={handleEmailChange}
+          />
+        </div>
+        <div className="contact-form__input_row contact-form__row">
+          <TextField
+              id="phone"
+              label="Telefon"
+              value={phone}
+              required
+              color="primary"
+              onChange={handlePhoneChange}
+          />
+          <TextField
+              id="city"
+              label="Oras"
+              value={city}
+              required
+              color="primary"
+              onChange={handleCityChange}
+          />
+        </div>
         <TextField
-          id="email"
-          label="Email"
-          type="email"
-          value={email}
-          required
-          color={"secondary"}
-          onChange={handleEmailChange}
+            id="message"
+            label="Mesaj"
+            value={message}
+            required
+            color="primary"
+            multiline
+            rows={10}
+            className="contact-form__row contact-form__text-area"
+            onChange={handleMessageChange}
         />
+        {/*For ReCAPTCHA to work access the local env at 127.0.0.1*/}
+        <ReCAPTCHA
+            sitekey="6LenursZAAAAABYp89NuWhSUiHONKZI_Hx9dKLu1"
+            onChange={() => handleValidChange(true)}
+        />
+        <div className="contact-form__row">
+          <SendMailButton
+              disabled={!valid}
+              mailData={{name, email, phone, city, message}}
+          />
+        </div>
       </div>
-      <div className="contact-form__input_row contact-form__row">
-        <TextField
-          id="phone"
-          label="Telefon"
-          value={phone}
-          required
-          color="primary"
-          onChange={handlePhoneChange}
-        />
-        <TextField
-          id="city"
-          label="Oras"
-          value={city}
-          required
-          color="primary"
-          onChange={handleCityChange}
-        />
-      </div>
-      <TextField
-        id="message"
-        label="Mesaj"
-        value={message}
-        required
-        color="primary"
-        multiline
-        rows={10}
-        className="contact-form__row contact-form__text-area"
-        onChange={handleMessageChange}
-      />
-      {/*For ReCAPTCHA to work access the local env at 127.0.0.1*/}
-      <ReCAPTCHA
-        sitekey="6LfUfKQZAAAAAOY2MJfCwF3PZ7--chFVKpIGb1Zh"
-        onChange={() => handleValidChange(true)}
-      />
-      <div className="contact-form__row">
-        <SendMailButton
-          disabled={!valid}
-          mailData={{ name, email, phone, city, message }}
-        />
-      </div>
-    </div>
   );
 }
