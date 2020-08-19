@@ -679,7 +679,61 @@ export const detailedGardList = [
     id: 6,
     path: "porti-acces-wilson",
     title: "Porti access Wilson",
-    details: [],
+    details: [
+      {
+        subtitle: "Wilson - Usa pietonala",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Usa-Pietonala-Wilson.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Montantii cu suport de lamela sunt montati in interiorul ramei.",
+          "Lamela Wilson se asambleaza mecanic in 45’.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Wilson - Porti batante",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Poarta-Batanta-Wilson.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Montantii cu suport de lamela sunt montati in interiorul ramei.",
+          "Lamela Wilson se asambleaza mecanic in 45’.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Wilson - Porti autoportante",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Autoportanta-Wilson.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Montantii cu suport de lamela sunt montati in interiorul ramei.",
+          "Lamela Wilson se asambleaza mecanic in 45’.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+          "Kit autoportanta [ 2m -> 12m ]",
+        ],
+      },
+      {
+        subtitle: "Wilson - Porti culisante",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Poarta-Culisanta-Wilson.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Montantii cu suport de lamela sunt montati in interiorul ramei.",
+          "Lamela Wilson se asambleaza mecanic in 45’.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+    ],
     images: [
       {
         img:
@@ -776,6 +830,233 @@ export const detailedGardList = [
       {
         img:
           "http://marlevinvest.ro/wp-content/uploads/2017/09/20170509_210927.jpg",
+      },
+    ],
+  },
+  {
+    id: 7,
+    path: "porti-acces-barcelona",
+    details: [
+      {
+        subtitle: "Barcelona - Usa pietonala",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Usa-Pietonala-Barcelona.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamela decorativa 109×20 mm cu rigidizare interioara.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Barcelona - Porti batante",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Poarta-Batanta-Barcelona.jpg",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamela decorativa 109×20 mm cu rigidizare interioara.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Barcelona - Porti autoportante",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Autoportanta-Barcelona.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamela decorativa 109×20 mm cu rigidizare interioara.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+          "Kit autoportanta [ 2m -> 12m ]",
+        ],
+      },
+      {
+        subtitle: "Barcelona - Porti culisante",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Poarta-Culisanta-Barcelona.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamela decorativa 109×20 mm cu rigidizare interioara.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+    ],
+    images: [
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171223_100220.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171223_100209-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171223_233357-1.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/IMG-20171022-WA0000.jpg",
+      },
+    ],
+  },
+  {
+    id: 8,
+    path: "porti-acces-atena",
+    details: [
+      {
+        subtitle: "Atena - Usi pietonale",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Atena-pietonala.jpg",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamela decorativa 110×20 mm cu striatii ce imita lemnul.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Atena - Porti batante",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Atena-batanta.jpg",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamela decorativa 110×20 mm cu striatii ce imita lemnul.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Atena - Porti autoportante",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Atena-autoportanta.jpg",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamela decorativa 110×20 mm cu striatii ce imita lemnul.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+          "Kit autoportanta [ 2m -> 12m ]",
+        ],
+      },
+      {
+        subtitle: "Atena - Porti culisante",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Atena-Culisanta.jpg",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamela decorativa 110×20 mm cu striatii ce imita lemnul.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+    ],
+    images: [
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171102_164304.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171102_165103.jpg",
+      },
+    ],
+  },
+  {
+    id: 9,
+    path: "porti-acces-varsovia",
+    details: [
+      {
+        subtitle: "Varsovia - Usa pietonala",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Usa-Pietonala-Varsovia.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamele pot avea dimensiuni cuprinse intre 20 mm si 160 mm.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Varsovia - Porti batante",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Poarta-Batanta-Varsovia.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamele pot avea dimensiuni cuprinse intre 20 mm si 160 mm.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+      {
+        subtitle: "Varsovia - Porti autoportante",
+        image:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Autoportanta-Varsovia.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamele pot avea dimensiuni cuprinse intre 20 mm si 160 mm.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+          "Kit autoportanta [ 2m -> 12m ]",
+        ],
+      },
+      {
+        subtitle: "Varsovia - Porti culisante",
+        image:
+            "http://marlevinvest.ro/wp-content/uploads/2017/09/Poarta-Culisanta-Varsovia.png",
+        description: [
+          "Rama din duraluminiu sudata in 45’.",
+          "Lamele decorative cu prindere mecanica.",
+          "Lamele pot avea dimensiuni cuprinse intre 20 mm si 160 mm.",
+          "Vopsirea se face in camp electrostatic in 2 variante:",
+          "– vopsire cu pulbere poliesterica: lucios, mat sau structurat – paletar RAL",
+          "– vopsire cu pulbere poliuretanica: structurat – culori special derivate din paletarul RAL.",
+        ],
+      },
+    ],
+    images: [
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20171107_153639.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171107_153703.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20171107_160453.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2018/02/20180118_161523.jpg",
+      },
+      {
+        img:
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/20180118_161445.jpg",
       },
     ],
   },

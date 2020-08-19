@@ -26,7 +26,7 @@ export class SinglePage extends React.Component {
         <div className="single-page-container__content">
           {
             gard.details.map((detail, index) => {
-              return <SinglePageDetail key={index} detail={detail} index={index}/>
+              return <SinglePageDetail key={`${detail}-${index}`} detail={detail} index={index}/>
             })
           }
         </div>

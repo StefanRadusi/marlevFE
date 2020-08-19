@@ -23,7 +23,7 @@ export function TabPanelContent(props) {
       </TabPanel>
       <TabPanel value={value} index={1}>
         {portiAcces.map((poarta, index) => {
-          return <TabPanelArticle key={index} element={poarta}/>
+          return <TabPanelArticle panouGard key={index} element={poarta}/>
         })}
       </TabPanel>
       <TabPanel value={value} index={2}>
