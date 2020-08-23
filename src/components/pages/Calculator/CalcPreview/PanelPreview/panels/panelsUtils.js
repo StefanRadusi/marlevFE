@@ -1,9 +1,13 @@
 import { PanelWilsonClassic } from "./PanelWilsonClassic/PanelWilsonClassic";
+import { PanelVarsoviaClassic } from "./PanelVarsovia/PanelVarsoviaClassic";
 
 export function getPanelByName(panelName) {
   switch (panelName) {
     case "panou-gard-wilson-clasic":
       return PanelWilsonClassic;
+
+    case "panou-de-gard-varsovia":
+      return PanelVarsoviaClassic;
 
     default:
       return null;

@@ -1,45 +1,10 @@
 .dimension-editor-container {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-
-  .dimension-editor-open-button {
-    display: flex;
-    background: black;
-    border-radius: 6px;
-    box-shadow: 0 5px 25px -10px transparent;
-    transition: box-shadow 0.3s ease;
-
-    &:hover {
-      box-shadow: 0 5px 25px -10px #000;
-    }
-
-    .dimension-editor-open-button-icon {
-      background: #ffb800;
-      padding: 3px;
-      width: 30px;
-      height: 30px;
-      border-radius: 5px;
-    }
-
-    .dimension-editor-open-button-text {
-      font-size: 12px;
-      width: 80px;
-      margin: 0;
-      margin-left: 6px;
-      color: white;
-      cursor: default;
-    }
-  }
-
+  flex: 1;
   .dimension-editor {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease, width 0.3s ease;
     background: rgba(255, 255, 255, 0.9);
     padding: 10px;
     border-bottom-left-radius: 10px;
-    width: 100px;
+
     overflow: hidden;
 
     .dimension-editor-dimension {
@@ -58,12 +23,6 @@
         transform: translateX(-2px);
       }
     }
-  }
-
-  .dimension-editor-open {
-    opacity: 1;
-    pointer-events: initial;
-    width: 300px;
   }
 
   .lamella-options {

@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import IsoIcon from "@material-ui/icons/Iso";
+import React from "react";
 import HeightIcon from "@material-ui/icons/Height";
 
 import "./DimensionsEditor.scss";
@@ -11,29 +10,15 @@ import { PageTitle } from "../../../../common/PageTitle/PageTitle";
 export function DimensionsEditor({
   width,
   height,
-  noOfLamella,
   heightOfLamella,
   setPanelWidth,
   setPanelHeight,
   setHightOfLamella,
+  lamellaOptions,
 }) {
-  const [open, setEditorVisibility] = useState(false);
-
   return (
     <div className="dimension-editor-container">
-      <div
-        className="dimension-editor-open-button"
-        onClick={() => setEditorVisibility(!open)}
-      >
-        <IsoIcon className="dimension-editor-open-button-icon" />
-        <p className="dimension-editor-open-button-text">Editare Dimensiuni</p>
-      </div>
-      <div
-        className={mergeCssClass(
-          "dimension-editor",
-          open && "dimension-editor-open"
-        )}
-      >
+      <div className={mergeCssClass("dimension-editor")}>
         <NumericInput
           label="inaltime (m)"
           Icon={HeightIcon}
@@ -48,34 +33,33 @@ export function DimensionsEditor({
           value={width}
           onChange={(value) => setPanelWidth(value)}
         />
-        <div className="lamella-options">
-          <PageTitle title="optiuni lamele" className="lamella-options-title" />
-          <RadioGroup
-            aria-label="gender"
-            name="gender1"
-            value={heightOfLamella}
-            onChange={({ target: { value } }) =>
-              setHightOfLamella(Number(value))
-            }
-            className="lamella-options-radio-group"
-          >
-            <FormControlLabel
-              value={0.1}
-              label={"0.1 metri"}
-              control={<Radio />}
+
+        {lamellaOptions && (
+          <div className="lamella-options">
+            <PageTitle
+              title="optiuni lamele"
+              className="lamella-options-title"
             />
-            <FormControlLabel
-              value={0.2}
-              label={"0.2 metri"}
-              control={<Radio />}
-            />
-            <FormControlLabel
-              value={0.3}
-              label={"0.3 metri"}
-              control={<Radio />}
-            />
-          </RadioGroup>
-        </div>
+            <RadioGroup
+              aria-label="gender"
+              name="gender1"
+              value={heightOfLamella}
+              onChange={({ target: { value } }) =>
+                setHightOfLamella(Number(value))
+              }
+              className="lamella-options-radio-group"
+            >
+              {lamellaOptions.map((option, index) => (
+                <FormControlLabel
+                  key={index}
+                  value={option}
+                  label={`${option * 1000} mm`}
+                  control={<Radio />}
+                />
+              ))}
+            </RadioGroup>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import RemoveIcon from "@material-ui/icons/Remove";
 import { Link } from "react-router-dom";
 
 export function SinglePageDetail(props) {
-  const { detail, index } = props;
+  const { detail, index, path } = props;
 
   return (
     <div className="detail-row">
@@ -15,13 +15,13 @@ export function SinglePageDetail(props) {
             <h2>{detail.subtitle}</h2>
             <div className="detail-row__content-description">
               {detail.description.map((phrase, index) => {
-                return <p>{phrase}</p>;
+                return <p key={index}>{phrase}</p>;
               })}
             </div>
             <div className="detail-row_content-calculator">
               <Link
-                  to="/calculator-oferta/panou-gard-wilson-clasic"
-                  className="detail-row_content-calculator"
+                to={`/calculator-oferta/${path}`}
+                className="detail-row_content-calculator"
               >
                 <div className="detail-row_content-calculator__container">
                   <AddIcon />
@@ -31,21 +31,21 @@ export function SinglePageDetail(props) {
               </Link>
             </div>
           </div>
-          <img src={detail.image}></img>
+          <img src={detail.image} alt="img"></img>
         </>
       ) : (
         <>
-          <img src={detail.image} />
+          <img src={detail.image} alt="img" />
           <div className="detail-row__content-container">
             <h2>{detail.subtitle}</h2>
             <div className="detail-row__content-description">
               {detail.description.map((phrase, index) => {
-                return <p>{phrase}</p>;
+                return <p key={index}>{phrase}</p>;
               })}
             </div>
             <div className="detail-row_content-calculator">
               <Link
-                to="/calculator-oferta/panou-gard-wilson-clasic"
+                to={`/calculator-oferta/${path}`}
                 className="detail-row_content-calculator"
               >
                 <div className="detail-row_content-calculator__container">
