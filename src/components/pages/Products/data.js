@@ -561,6 +561,9 @@ export const detailedGardList = [
           "http://marlevinvest.ro/wp-content/uploads/2017/09/20170509_151446.jpg",
       },
     ],
+    initialNrOfLamella: 10,
+    initialHeightOfLamella: 0.2,
+    lamellaOptions: [0.2, 0.15, 0.12, 0.1, 0.08, 0.06],
   },
   {
     id: 4,
@@ -1026,7 +1029,7 @@ export const detailedGardList = [
       {
         subtitle: "Varsovia - Porti culisante",
         image:
-            "http://marlevinvest.ro/wp-content/uploads/2017/09/Poarta-Culisanta-Varsovia.png",
+          "http://marlevinvest.ro/wp-content/uploads/2017/09/Poarta-Culisanta-Varsovia.png",
         description: [
           "Rama din duraluminiu sudata in 45’.",
           "Lamele decorative cu prindere mecanica.",

@@ -3,13 +3,10 @@ import React from "react";
 import "./SinglePage.scss";
 import { detailedGardList } from "../Products/data";
 import { ImagePreviewList } from "../Products/ImagePreviewList";
-import {SinglePageDetail} from "./SinglePageDetail";
+import { SinglePageDetail } from "./SinglePageDetail";
+import { PageTitle } from "../../common/PageTitle";
 
 export class SinglePage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     let { path } = this.props.match.params;
     path = path.replace("/panou", "");
@@ -19,16 +16,18 @@ export class SinglePage extends React.Component {
 
     return (
       <div className="single-page-container">
-        <div className="single-page-container__title">
-          <h1 className="gard-title">{gard.title}</h1>
-          <span className="gard-separator-line"/>
-        </div>
+        <PageTitle title={gard.title} />
         <div className="single-page-container__content">
-          {
-            gard.details.map((detail, index) => {
-              return <SinglePageDetail key={`${detail}-${index}`} detail={detail} index={index}/>
-            })
-          }
+          {gard.details.map((detail, index) => {
+            return (
+              <SinglePageDetail
+                key={`${detail}-${index}`}
+                detail={detail}
+                index={index}
+                path={gard.path}
+              />
+            );
+          })}
         </div>
         <ImagePreviewList elementList={gard.images} />
       </div>

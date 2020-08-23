@@ -1,74 +1,52 @@
 .single-page-container {
-  margin-top: 20vh;
-  margin-bottom: 15vh;
-  padding-left: 25px;
-  padding-right: 25px;
-
-  .single-page-container__title {
-    display: flex;
-    height: 100px;
-    margin-bottom: 15vh;
-
-    .gard-title {
-      white-space: nowrap;
-      font-size: 42px;
-      font-weight: bold;
-      line-height: 50px;
-      margin-left: 15vh;
-    }
-
-    .gard-separator-line {
-      height: 1px;
-      border-top: 1px solid #ebebeb;
-      display: block;
-      position: relative;
-      top: 50%;
-      width: 100%;
-    }
-  }
+  padding: 100px 100px 40px 100px;
 
   .single-page-container__content {
-    @media only screen and (max-width: 1800px) {
-      .detail-row {
-        width: 1170px;
-      }
-    }
+    margin-top: 50px;
 
-    @media only screen and (max-width: 1500px) {
-      .detail-row {
-        width: 1170px;
-      }
-    }
+    // @media only screen and (max-width: 1800px) {
+    //   .detail-row {
+    //     width: 1170px;
+    //   }
+    // }
 
-    @media only screen and (max-width: 1200px) {
-      .detail-row {
-        width: 1170px;
-      }
-    }
+    // @media only screen and (max-width: 1500px) {
+    //   .detail-row {
+    //     width: 1170px;
+    //   }
+    // }
 
-    @media only screen and (max-width: 992px) {
-      .detail-row {
-        width: 970px;
-      }
-    }
+    // @media only screen and (max-width: 1200px) {
+    //   .detail-row {
+    //     width: 1170px;
+    //   }
+    // }
 
-    @media only screen and (max-width: 768px) {
-      .detail-row {
-        width: 750px;
-      }
-    }
+    // @media only screen and (max-width: 992px) {
+    //   .detail-row {
+    //     width: 970px;
+    //   }
+    // }
+
+    // @media only screen and (max-width: 768px) {
+    //   .detail-row {
+    //     width: 750px;
+    //   }
+    // }
 
     .detail-row {
       display: flex;
       flex-direction: row;
-      margin-left: 100px;
-      margin-bottom: 180px;
+      margin-bottom: 100px;
+
+      > :first-child {
+        margin-right: 30px;
+      }
 
       img {
         flex: 1;
         max-width: 550px;
         max-height: 300px;
-        margin-right: 10%;
       }
 
       .detail-row__content-container {
@@ -96,12 +74,14 @@
         .detail-row_content-calculator {
           display: flex;
           cursor: pointer;
+          text-decoration: none;
 
           .detail-row_content-calculator__container {
+            margin-top: 10px;
             width: 60px;
             height: 34px;
             border: 5px solid #ffc30b;
-            border-radius:  6px 6px 0px 6px;
+            border-radius: 6px 6px 0px 6px;
             background-color: #fce205;
           }
 
@@ -110,9 +90,10 @@
             font-weight: bold;
             background-color: black;
             color: white;
-            padding-left: 10px;
-            padding-right: 10px;
             border-radius: 0px 6px 6px 0px;
+            margin: 0;
+            align-self: flex-end;
+            padding: 3px 10px;
           }
         }
       }
