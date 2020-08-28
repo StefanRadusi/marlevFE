@@ -6,6 +6,7 @@ import { mergeCssClass } from "../../../../../utils";
 import { NumericInput } from "../../../../common/NumericInput";
 import { RadioGroup, FormControlLabel, Radio } from "@material-ui/core";
 import { PageTitle } from "../../../../common/PageTitle/PageTitle";
+import { priceFormula } from "./DimensiosEditorUtils";
 
 export function DimensionsEditor({
   width,
@@ -15,10 +16,12 @@ export function DimensionsEditor({
   setPanelHeight,
   setHightOfLamella,
   lamellaOptions,
+  panelType,
 }) {
   return (
     <div className="dimension-editor-container">
       <div className={mergeCssClass("dimension-editor")}>
+        <PageTitle title="Dimensiuni" className="editor-section-title" />
         <NumericInput
           label="inaltime (m)"
           Icon={HeightIcon}
@@ -37,8 +40,8 @@ export function DimensionsEditor({
         {lamellaOptions && (
           <div className="lamella-options">
             <PageTitle
-              title="optiuni lamele"
-              className="lamella-options-title"
+              title="Optiuni lamele"
+              className="editor-section-title"
             />
             <RadioGroup
               aria-label="gender"
@@ -60,6 +63,13 @@ export function DimensionsEditor({
             </RadioGroup>
           </div>
         )}
+
+        <div className="total-container">
+          <PageTitle title="Total" className="editor-section-title" />
+          <h2 className="total-value">
+            {`${priceFormula(width, height, heightOfLamella, panelType)} Ron`}
+          </h2>
+        </div>
       </div>
     </div>
   );

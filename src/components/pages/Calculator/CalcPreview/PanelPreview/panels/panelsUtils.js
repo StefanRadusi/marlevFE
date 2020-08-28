@@ -3,7 +3,7 @@ import { PanelVarsoviaClassic } from "./PanelVarsovia/PanelVarsoviaClassic";
 
 export function getPanelByName(panelName) {
   switch (panelName) {
-    case "panou-gard-wilson-clasic":
+    case "panou-de-gard-wilson":
       return PanelWilsonClassic;
 
     case "panou-de-gard-varsovia":
@@ -38,14 +38,4 @@ export function calcScale(panel, container, originalScale) {
   }
 
   return Math.round(originalScale * 100) / 100;
-}
-
-export function calcNumberOfLamellas(height, heightOfPanels) {
-  if (isNaN(Number(height))) {
-    return 1;
-  }
-
-  const noOfLamella = Math.floor(height / heightOfPanels);
-
-  return noOfLamella;
 }

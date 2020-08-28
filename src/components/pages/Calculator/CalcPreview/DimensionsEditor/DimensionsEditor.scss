@@ -19,6 +19,7 @@
     }
 
     .dimension-editor-dimension-height {
+      margin-top: 20px;
       .numeric-input-icon {
         transform: translateX(-2px);
       }
@@ -27,19 +28,6 @@
 
   .lamella-options {
     margin-top: 30px;
-    .lamella-options-title {
-      font-size: 16px;
-      margin-bottom: 10px;
-      span {
-        padding: 2px 10px;
-        background: black;
-        color: white;
-        border-radius: 10px;
-      }
-      &::before {
-        top: 12px;
-      }
-    }
 
     .lamella-options-radio-group {
       padding-left: 10px;
@@ -53,6 +41,29 @@
           }
         }
       }
+    }
+  }
+
+  .total-container {
+    margin-top: 30px;
+
+    .total-value {
+      margin: 0;
+      text-align: right;
+    }
+  }
+
+  .editor-section-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    span {
+      padding: 2px 10px;
+      background: black;
+      color: white;
+      border-radius: 10px;
+    }
+    &::before {
+      top: 12px;
     }
   }
 }

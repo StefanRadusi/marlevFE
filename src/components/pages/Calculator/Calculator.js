@@ -2,14 +2,16 @@ import React, { useState } from "react";
 
 import "./Calculator.scss";
 import { PageTitle } from "../../common/PageTitle/PageTitle";
-import { getPanel } from "./CalculatorUtils";
+import { getPanel, getPanelListTitles, titleToPath } from "./CalculatorUtils";
 import { CalcPreview } from "./CalcPreview";
 import { DimensionsEditor } from "./CalcPreview/DimensionsEditor";
+import { Dropdown } from "../../common/Dropdown/Dropdown";
 
 export function Calculator({
   match: {
     params: { item },
   },
+  history,
 }) {
   const {
     title,
@@ -25,12 +27,23 @@ export function Calculator({
     heightOfLamella: initialHeightOfLamella,
   });
 
+  const titles = getPanelListTitles();
+  console.log(titles);
+
   return (
     <div id="calculator-oferta" className="calculator-page">
-      <h3 className="calculator-page-title">Creare Oferta</h3>
-      <PageTitle title={title} />
+      <Dropdown
+        options={titles}
+        selectedOption={title}
+        handleChange={(title) => {
+          console.log(title);
+          history.push(titleToPath(title));
+        }}
+      />
+
+      <PageTitle title={"Creare Oferta"} />
       <div className="calculator">
-        <CalcPreview panel={panel} setPanel={setPanel} panelName={item} />
+        <CalcPreview panel={panel} panelName={item} />
         <DimensionsEditor
           {...panel}
           setPanelWidth={(width) => setPanel({ ...panel, width })}
@@ -39,6 +52,7 @@ export function Calculator({
             setPanel({ ...panel, heightOfLamella })
           }
           lamellaOptions={lamellaOptions}
+          panelType={item}
         />
       </div>
     </div>

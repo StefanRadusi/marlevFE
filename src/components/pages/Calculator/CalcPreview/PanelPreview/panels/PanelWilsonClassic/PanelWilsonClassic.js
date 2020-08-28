@@ -1,10 +1,11 @@
 import React from "react";
 
 import "./PanelWilsonClassic.scss";
-import { calcNumberOfLamellas } from "../panelsUtils";
+
+import { calcNumberOfLamellaWillson } from "./PanelWilsonUtils";
 
 export function PanelWilsonClassic({ height, heightOfLamella }) {
-  const nrOfLamella = calcNumberOfLamellas(height, heightOfLamella);
+  const nrOfLamella = calcNumberOfLamellaWillson(height, heightOfLamella);
 
   return (
     <div className="panel-wilson-classic">

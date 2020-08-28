@@ -1,0 +1,16 @@
+.dropdown {
+  &.MuiFormControl-root {
+    margin-bottom: 20px;
+  }
+
+  .dropdown-options {
+    background: #ffb800;
+    border-radius: 10px;
+
+    .MuiInput-input {
+      padding-left: 20px;
+      padding-right: 30px;
+      font-weight: bold;
+    }
+  }
+}

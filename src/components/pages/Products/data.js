@@ -417,6 +417,8 @@ export const detailedGardList = [
           "http://marlevinvest.ro/wp-content/uploads/2017/09/20170509_161150.jpg",
       },
     ],
+    initialNrOfLamella: 10,
+    initialHeightOfLamella: 0.1,
   },
   {
     id: 2,

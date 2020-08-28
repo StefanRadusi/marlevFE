@@ -5,7 +5,7 @@ import { Grid } from "./Grid";
 import { Dimensions } from "./Dimensions/Dimensions";
 import { PanelPreview } from "./PanelPreview/PanelPreview";
 
-export function CalcPreview({ panel, setPanel, panelName }) {
+export function CalcPreview({ panel, panelName }) {
   const { width, height, heightOfLamella } = panel;
 
   return (
