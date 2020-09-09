@@ -1,31 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Cart.scss";
-import { TextField, TextareaAutosize } from "@material-ui/core";
-import EmailIcon from "@material-ui/icons/Email";
-import PhoneIcon from "@material-ui/icons/Phone";
-import { mergeCssClass } from "../../../../utils";
 
-export function Cart({ show }) {
+import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
+
+import { mergeCssClass } from "../../../../utils";
+import {
+  storeToLocalStorage,
+  generateCartItem,
+  getInitialNrOfItems,
+} from "./CartUtils";
+import { withRouter } from "react-router-dom";
+
+export const Cart = withRouter(({ panel, item, history }) => {
+  const [nrOfItems, setNrOfItems] = useState(getInitialNrOfItems());
+
   return (
     <div
-      className={mergeCssClass("cart-container", show && "cart-container-open")}
+      className={mergeCssClass("cart-container")}
+      onClick={() => {
+        setNrOfItems(nrOfItems + 1);
+        storeToLocalStorage(generateCartItem(panel, item));
+      }}
     >
-      <div className="cart-field">
-        <EmailIcon className="cart-field-icon" />
-        <TextField label={"email"} className="cart-field-input" />
-      </div>
-      <div className="cart-field">
-        <PhoneIcon className="cart-field-icon" />
-        <TextField label={"mobil"} className="cart-field-input" />
-      </div>
+      <AddShoppingCartIcon />
+      <p className="cart-text">Adauga oferta</p>
 
-      <TextareaAutosize
-        aria-label="minimum height"
-        rowsMin={3}
-        placeholder="Detalii comanda"
-        className="cart-text-area"
-      />
+      {nrOfItems !== 0 && (
+        <div
+          className="cart-nr-of-items"
+          onClick={(event) => {
+            event.stopPropagation();
+            history.push("/oferte-salvate");
+          }}
+        >
+          <p>{nrOfItems}</p>
+          <p className="go-to-cart-page">vezi oferte</p>
+        </div>
+      )}
     </div>
   );
-}
+});

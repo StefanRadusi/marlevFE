@@ -6,6 +6,7 @@ import { getPanel, getPanelListTitles, titleToPath } from "./CalculatorUtils";
 import { CalcPreview } from "./CalcPreview";
 import { DimensionsEditor } from "./CalcPreview/DimensionsEditor";
 import { Dropdown } from "../../common/Dropdown/Dropdown";
+import { Cart } from "./Cart/Cart";
 
 export function Calculator({
   match: {
@@ -44,16 +45,19 @@ export function Calculator({
       <PageTitle title={"Creare Oferta"} />
       <div className="calculator">
         <CalcPreview panel={panel} panelName={item} />
-        <DimensionsEditor
-          {...panel}
-          setPanelWidth={(width) => setPanel({ ...panel, width })}
-          setPanelHeight={(height) => setPanel({ ...panel, height })}
-          setHightOfLamella={(heightOfLamella) =>
-            setPanel({ ...panel, heightOfLamella })
-          }
-          lamellaOptions={lamellaOptions}
-          panelType={item}
-        />
+        <div className="calculator-side-wrapper">
+          <DimensionsEditor
+            {...panel}
+            setPanelWidth={(width) => setPanel({ ...panel, width })}
+            setPanelHeight={(height) => setPanel({ ...panel, height })}
+            setHightOfLamella={(heightOfLamella) =>
+              setPanel({ ...panel, heightOfLamella })
+            }
+            lamellaOptions={lamellaOptions}
+            panelType={item}
+          />
+          <Cart panel={panel} item={getPanel(item)} />
+        </div>
       </div>
     </div>
   );

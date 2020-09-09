@@ -16,7 +16,8 @@
     "react-google-recaptcha": "^2.1.0",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^1.2.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "uniqid": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

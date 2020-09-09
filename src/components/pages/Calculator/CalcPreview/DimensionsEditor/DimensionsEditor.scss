@@ -1,5 +1,8 @@
 .dimension-editor-container {
+  margin-bottom: 50px;
   flex: 1;
+  overflow: auto;
+
   .dimension-editor {
     background: rgba(255, 255, 255, 0.9);
     padding: 10px;
