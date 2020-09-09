@@ -23,7 +23,7 @@ export const Cart = withRouter(({ panel, item, history }) => {
         storeToLocalStorage(generateCartItem(panel, item));
       }}
     >
-      <AddShoppingCartIcon />
+      <AddShoppingCartIcon className="cart-icon" />
       <p className="cart-text">Adauga oferta</p>
 
       {nrOfItems !== 0 && (

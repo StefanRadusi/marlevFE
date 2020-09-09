@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 
+import { Calc } from "./Calc/Calc";
+import { ContactData } from "./ContactForm/ContactData";
 import "./Calculator.scss";
-import { PageTitle } from "../../common/PageTitle/PageTitle";
-import { getPanel, getPanelListTitles, titleToPath } from "./CalculatorUtils";
-import { CalcPreview } from "./CalcPreview";
-import { DimensionsEditor } from "./CalcPreview/DimensionsEditor";
-import { Dropdown } from "../../common/Dropdown/Dropdown";
-import { Cart } from "./Cart/Cart";
+import { ContactForm } from "./ContactForm";
+import { isEmpty } from "lodash";
 
 export function Calculator({
   match: {
@@ -14,51 +12,19 @@ export function Calculator({
   },
   history,
 }) {
-  const {
-    title,
-    initialNrOfLamella,
-    initialHeightOfLamella,
-    lamellaOptions,
-  } = getPanel(item);
-
-  const [panel, setPanel] = useState({
-    width: 1,
-    height: 1,
-    noOfLamella: initialNrOfLamella,
-    heightOfLamella: initialHeightOfLamella,
-  });
-
-  const titles = getPanelListTitles();
-  console.log(titles);
+  const [contactData, setContactData] = useState(
+    JSON.parse(localStorage.getItem("contactData"))
+  );
 
   return (
-    <div id="calculator-oferta" className="calculator-page">
-      <Dropdown
-        options={titles}
-        selectedOption={title}
-        handleChange={(title) => {
-          console.log(title);
-          history.push(titleToPath(title));
-        }}
-      />
-
-      <PageTitle title={"Creare Oferta"} />
-      <div className="calculator">
-        <CalcPreview panel={panel} panelName={item} />
-        <div className="calculator-side-wrapper">
-          <DimensionsEditor
-            {...panel}
-            setPanelWidth={(width) => setPanel({ ...panel, width })}
-            setPanelHeight={(height) => setPanel({ ...panel, height })}
-            setHightOfLamella={(heightOfLamella) =>
-              setPanel({ ...panel, heightOfLamella })
-            }
-            lamellaOptions={lamellaOptions}
-            panelType={item}
-          />
-          <Cart panel={panel} item={getPanel(item)} />
+    <ContactData.Provider value={contactData}>
+      {isEmpty(contactData) ? (
+        <ContactForm setContactData={setContactData} />
+      ) : (
+        <div id="calculator-oferta" className="calculator-page">
+          <Calc item={item} history={history} />
         </div>
-      </div>
-    </div>
+      )}
+    </ContactData.Provider>
   );
 }
