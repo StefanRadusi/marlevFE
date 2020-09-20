@@ -12,6 +12,7 @@ import { AutomatizariPortiBalante } from "./components/pages/Automatizari/Automa
 import { AutomatizariPortiCulisante } from "./components/pages/Automatizari/AutomatizariPortiCulisante/AutomatizariPortiCulisante";
 import { Accesorii } from "./components/pages/Automatizari/Accesorii/Accesorii";
 import OferteSavlate from "./components/pages/OferteSalvate";
+import Success from "./components/pages/OferteSalvate/Success";
 
 function App() {
   const [message, setMessage] = React.useState({ text: "", type: "" });
@@ -45,6 +46,7 @@ function App() {
           />
           <Route exact path="/accesorii-automatizari" component={Accesorii} />
           <Route exact path="/panou/:path" component={SinglePage} />
+          <Route exact path="/oferte-salvate/success" component={Success} />
           <Route exact path="/oferte-salvate" component={OferteSavlate} />
         </Switch>
       </Router>

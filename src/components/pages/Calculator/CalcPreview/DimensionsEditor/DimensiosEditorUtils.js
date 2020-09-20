@@ -7,7 +7,6 @@ function priceFormulaWilson(width, height) {
 }
 
 export function priceFormula(width, height, heightOfLamella, panelType) {
-  console.log(panelType);
   switch (panelType) {
     case "panou-de-gard-varsovia":
       return priceFormulaVarsovia(width, height, heightOfLamella);

@@ -1,0 +1,16 @@
+.container-success {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 100px 40px 100px;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
