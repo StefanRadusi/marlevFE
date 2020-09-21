@@ -421,6 +421,12 @@ export const detailedGardList = [
     initialHeightOfLamella: 0.1,
   },
   {
+    id: 10,
+    path: "panou-de-gard-wilson-ramen",
+    title: "Panou de gard Wilson Ramen",
+    initialHeightOfLamella: 0.1,
+  },
+  {
     id: 2,
     path: "panou-de-gard-barcelona",
     title: "Panou de gard Barcelona",
@@ -474,6 +480,15 @@ export const detailedGardList = [
           "http://marlevinvest.ro/wp-content/uploads/2018/02/IMG-20171022-WA0000.jpg",
       },
     ],
+    initialNrOfLamella: 10,
+    initialHeightOfLamella: 0.2,
+  },
+  {
+    id: 11,
+    path: "panou-de-gard-barcelona-ramen",
+    title: "Panou de gard Barcelona Ramen",
+    initialNrOfLamella: 10,
+    initialHeightOfLamella: 0.2,
   },
   {
     id: 3,
@@ -568,6 +583,14 @@ export const detailedGardList = [
     lamellaOptions: [0.2, 0.15, 0.12, 0.1, 0.08, 0.06],
   },
   {
+    id: 12,
+    path: "panou-de-gard-varsovia-ramen",
+    title: "Panou de gard Varsovia Ramen",
+    initialNrOfLamella: 10,
+    initialHeightOfLamella: 0.2,
+    lamellaOptions: [0.2, 0.15, 0.12, 0.1, 0.08, 0.06],
+  },
+  {
     id: 4,
     path: "panou-de-gard-atena",
     title: "Panou de gard Atena",
@@ -647,6 +670,11 @@ export const detailedGardList = [
           "http://marlevinvest.ro/wp-content/uploads/2017/09/20170701_173500.jpg",
       },
     ],
+  },
+  {
+    id: 13,
+    path: "panou-de-gard-atena-ramen",
+    title: "Panou de gard Atena Ramen",
   },
   {
     id: 5,

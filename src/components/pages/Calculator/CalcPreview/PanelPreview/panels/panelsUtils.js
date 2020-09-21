@@ -1,13 +1,24 @@
 import { PanelWilsonClassic } from "./PanelWilsonClassic/PanelWilsonClassic";
 import { PanelVarsoviaClassic } from "./PanelVarsovia/PanelVarsoviaClassic";
+import { PanelWilsonRamen } from "./PanelWilsonRamen/PanelWilsonRamen";
+import { PanelVarsoviaClassicRamen } from "./PanelVarsoviaRamen/PanelVarsoviaClassicRamen";
+import { PanelBarcelonaClasic } from "./PanelBarcelonaClassic/PanelBarcelonaClassic";
+import { PanelBarcelonaRamen } from "./PanelBarcelonaRamen/PanelBarcelonaRamen";
 
 export function getPanelByName(panelName) {
   switch (panelName) {
     case "panou-de-gard-wilson":
       return PanelWilsonClassic;
-
+    case "panou-de-gard-wilson-ramen":
+      return PanelWilsonRamen;
     case "panou-de-gard-varsovia":
       return PanelVarsoviaClassic;
+    case "panou-de-gard-varsovia-ramen":
+      return PanelVarsoviaClassicRamen;
+    case "panou-de-gard-barcelona":
+      return PanelBarcelonaClasic;
+    case "panou-de-gard-barcelona-ramen":
+      return PanelBarcelonaRamen;
 
     default:
       return null;
