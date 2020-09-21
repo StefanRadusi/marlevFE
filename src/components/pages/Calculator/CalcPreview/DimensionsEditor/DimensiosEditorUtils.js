@@ -18,6 +18,10 @@ function priceFormulaBarcelona(width, height) {
   return width * 2 + height * 3 + 169 + 23;
 }
 
+function priceFormulaBarcelonaRamen(width, height) {
+  return width * 2 + height * 3 + 169 + 23 + 110;
+}
+
 export function priceFormula(width, height, heightOfLamella, panelType) {
   switch (panelType) {
     case "panou-de-gard-varsovia":
@@ -32,7 +36,10 @@ export function priceFormula(width, height, heightOfLamella, panelType) {
       return priceFormulaWilsonRamen(width, height);
 
     case "panou-de-gard-barcelona":
-      return priceFormulaBarcelona(width, height)
+      return priceFormulaBarcelona(width, height);
+
+    case "panou-de-gard-barcelona-ramen":
+      return priceFormulaBarcelonaRamen(width, height);
 
     default:
       return null;
