@@ -481,14 +481,14 @@ export const detailedGardList = [
       },
     ],
     initialNrOfLamella: 10,
-    initialHeightOfLamella: 0.2,
+    initialHeightOfLamella: 0.12,
   },
   {
     id: 11,
     path: "panou-de-gard-barcelona-ramen",
     title: "Panou de gard Barcelona Ramen",
     initialNrOfLamella: 10,
-    initialHeightOfLamella: 0.2,
+    initialHeightOfLamella: 0.12,
   },
   {
     id: 3,
@@ -579,7 +579,7 @@ export const detailedGardList = [
       },
     ],
     initialNrOfLamella: 10,
-    initialHeightOfLamella: 0.2,
+    initialHeightOfLamella: 0.12,
     lamellaOptions: [0.2, 0.15, 0.12, 0.1, 0.08, 0.06],
   },
   {
@@ -587,7 +587,7 @@ export const detailedGardList = [
     path: "panou-de-gard-varsovia-ramen",
     title: "Panou de gard Varsovia Ramen",
     initialNrOfLamella: 10,
-    initialHeightOfLamella: 0.2,
+    initialHeightOfLamella: 0.12,
     lamellaOptions: [0.2, 0.15, 0.12, 0.1, 0.08, 0.06],
   },
   {

@@ -1,6 +1,5 @@
 import uniqid from "uniqid";
 import { priceFormula } from "../CalcPreview/DimensionsEditor/DimensiosEditorUtils";
-import React from "react";
 
 export function getInitialNrOfItems() {
   const cartItems = localStorage.getItem("cart-items");

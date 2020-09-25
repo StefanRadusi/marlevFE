@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { TextField } from "@material-ui/core";
 import { mergeCssClass } from "../../../utils";
 
@@ -9,6 +9,9 @@ import "./NumericInput.scss";
 import { isNumber } from "./NumericInputUtils";
 
 export function NumericInput({ label, Icon, className, value, onChange }) {
+  console.log(value);
+  const [innerValue, setValue] = useState(value);
+
   return (
     <div className={mergeCssClass("numeric-input-container", className)}>
       {Icon && <Icon className="numeric-input-icon" />}
@@ -16,12 +19,18 @@ export function NumericInput({ label, Icon, className, value, onChange }) {
         error={!isNumber(value)}
         label={label}
         className="numeric-input"
-        value={value}
-        onChange={(event) => onChange(event.target.value)}
+        value={innerValue}
+        onChange={(event) => setValue(event.target.value)}
         helperText={isNumber(value) ? null : "valuare incorecta"}
-        onBlur={() => {
-          if (!isNumber(value)) {
-            onChange(0);
+        onBlur={(event) => {
+          if (
+            !isNumber(event.target.value) ||
+            Number(event.target.value) <= 0
+          ) {
+            onChange(1);
+            setValue(1);
+          } else {
+            onChange(event.target.value);
           }
         }}
       />
@@ -30,8 +39,9 @@ export function NumericInput({ label, Icon, className, value, onChange }) {
           className="numeric-increase-decrease-button numeric-decrease"
           onClick={() => {
             const numberValue = Number(value) - 0.5;
-
-            onChange(isNaN(numberValue) || numberValue < 0 ? 0 : numberValue);
+            if (numberValue >= 1) {
+              onChange(isNaN(numberValue) || numberValue < 0 ? 0 : numberValue);
+            }
           }}
         />
         <AddIcon

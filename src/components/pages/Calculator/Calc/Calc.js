@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Dropdown } from "../../../common/Dropdown/Dropdown";
 import { getPanel, getPanelListTitles, titleToPath } from "../CalculatorUtils";
@@ -21,6 +21,15 @@ export function Calc({ item, history }) {
     noOfLamella: initialNrOfLamella,
     heightOfLamella: initialHeightOfLamella,
   });
+
+  useEffect(() => {
+    setPanel({
+      width: 1,
+      height: 1,
+      noOfLamella: initialNrOfLamella,
+      heightOfLamella: initialHeightOfLamella,
+    });
+  }, [initialNrOfLamella, initialHeightOfLamella]);
 
   const titles = getPanelListTitles();
   return (

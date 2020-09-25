@@ -1,7 +1,7 @@
 .products-wrapper {
   position: relative;
   overflow: hidden;
-  padding: 100px 100px 40px 100px;
+  padding: 100px 100px 0px 100px;
   margin: 0 auto;
 }
 
@@ -52,30 +52,18 @@
       }
     }
   }
+
+  .MuiTabs-flexContainer {
+    overflow: auto;
+  }
 }
 
-// @media screen and (min-width: 768px) {
-//   .products-wrapper {
-//     width: 750px;
+@media only screen and (max-width: 420px) {
+  .products-wrapper {
+    padding: 90px 10px 0px 10px;
 
-//     .products-inner-wrapper {
-//       .products-content {
-//         .products-content-tabs {
-//           display: block;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (min-width: 992px) {
-//   .products-wrapper {
-//     width: 970px;
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//   .products-wrapper {
-//     width: 1170px;
-//   }
-// }
+    .article-container {
+      min-width: 300px;
+    }
+  }
+}

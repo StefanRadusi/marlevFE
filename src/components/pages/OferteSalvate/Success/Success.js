@@ -5,7 +5,7 @@ import "./Success.scss";
 export default function Success() {
   return (
     <div className="container-success">
-      <img src={success} />
+      <img src={success} alt="img" />
       <p>Comanda dumneavoastra a fost inregistrata cu succes.</p>
       <p>Va vom contacta in cel mai scurt timp.</p>
     </div>
