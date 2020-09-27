@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { TextField } from "@material-ui/core";
 import { mergeCssClass } from "../../../utils";
 
@@ -11,6 +11,10 @@ import { isNumber } from "./NumericInputUtils";
 export function NumericInput({ label, Icon, className, value, onChange }) {
   console.log(value);
   const [innerValue, setValue] = useState(value);
+
+  useEffect(() => {
+    setValue(value);
+  }, [value]);
 
   return (
     <div className={mergeCssClass("numeric-input-container", className)}>
